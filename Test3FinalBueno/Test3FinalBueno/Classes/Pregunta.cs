@@ -25,10 +25,10 @@ namespace Test3FinalBueno.Classes
             {
                 if (nombre.Length  <= 2 )
                 {
-                    throw new System.ArgumentException();
+                    throw new System.Exception();
                 }
             }
-            catch (ArgumentException)
+            catch (Exception)
             {
                 Console.WriteLine("nombre no válido");
             }
@@ -37,10 +37,10 @@ namespace Test3FinalBueno.Classes
             {
                 if (apellido.Length <= 2)
                 {
-                    throw new System.ArgumentException();
+                    throw new System.Exception();
                 }
             }
-            catch (ArgumentException)
+            catch (Exception)
             {
                 Console.WriteLine("apellido no válido");
             }
