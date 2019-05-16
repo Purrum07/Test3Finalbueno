@@ -23,17 +23,28 @@ namespace Test3FinalBueno.Classes
 
             try
             {
-                if (nombre.Length  <= 2 && apellido.Length <= 2)
+                if (nombre.Length  <= 2 )
                 {
                     throw new System.ArgumentException();
                 }
-                
-
             }
             catch (ArgumentException)
             {
-                Console.WriteLine("nombre/apellido no válido");
+                Console.WriteLine("nombre no válido");
             }
+
+            try
+            {
+                if (apellido.Length <= 2)
+                {
+                    throw new System.ArgumentException();
+                }
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine("apellido no válido");
+            }
+
 
         }
 
